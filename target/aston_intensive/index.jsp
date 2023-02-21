@@ -8,7 +8,9 @@
 
 <body>
 
-<p>Hello здарова!</p>
+<p>Hello</p>
+<a th:href="@{/vi/employees}">/vi/employees</a>
+<a th:href="@{/vi/employees/new}">/vi/employees</a>
 
 </body>
 
