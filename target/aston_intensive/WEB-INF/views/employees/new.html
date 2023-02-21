@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add new employee</title>
+</head>
+
+<body>
+<form th:method="post" th:action="@{/v1/employees}" th:object="${employee}">
+    <label for="name">name</label>
+    <input type="text" th:field="*{name}" id="name">
+    <br/>
+    <label for="city">city</label>
+    <input type="text" th:field="*{city}" id="city">
+    <br/>
+    <label for="birthday">city</label>
+    <!--/*@thymesVar id="setBirthday" type="java.sql.Date"*/-->
+    <input type="date" th:field="*{birthday}" id="birthday">
+    <br/>
+    <input type="submit" value="Create!">
+</form>
+
+
+</body>
+
+</html>
