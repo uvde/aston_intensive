@@ -26,7 +26,6 @@ public class EmployeesController {
     @GetMapping("/{id}")
     public String getById(Model model, @PathVariable("id") long id){
         model.addAttribute("employee", employeesService.getById(id));
-        System.out.println(employeesService.getById(id));
         return "employees/employee";
     }
 

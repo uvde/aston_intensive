@@ -11,8 +11,6 @@ public interface ProjectsService {
     Long saveProject(Project project);
     void deleteProjectById(Long id);
     void updateProjectById(Project project);
-
     List<Employee> getEmployeesOnProject(long id);
-
     void deleteEmployeeOnProjectById(long employeeId, long projectId);
 }

@@ -50,8 +50,6 @@ public class EmployeesDaoImpl implements EmployeesDao {
                 employee.setSalary(rs.getInt("employee_salary"));
                 employee.setCity(rs.getString("employee_city"));
                 employee.setBirthday(rs.getDate("employee_birthday"));
-
-                System.out.println(employee);
                 employees.add(employee);
             }
         } catch (SQLException e) {
